@@ -1,0 +1,41 @@
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	.striped-background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: linear-gradient(
+			to bottom,
+			#d77b00 0%,
+			#d77b00 40%,
+			#ffecd3 40%,
+			#ffecd3 44%,
+			#ff970d 44%,
+			#ff970d 50%,
+			#ffa835 50%,
+			#ffa835 64%,
+			#fff2e1 64%,
+			#fff2e1 74%,
+			#ffbb62 74%,
+			#ffbb62 100%
+		);
+	}
+
+	.flex-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.logo {
+			width: 80vw;
+		}
+	}
+}
