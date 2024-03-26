@@ -5,30 +5,20 @@
 	src: url('/fonts/Nexa\ Light.otf') format('opentype');
 }
 
-body,
-html {
+html,
+body {
 	margin: 0;
 	padding: 20px;
+	font-family: 'Nexa Light', Arial, Helvetica, sans-serif;
 	height: 100%;
-	font-family: 'Nexa Light';
 
 	h3 {
-		margin: 5;
 		font-size: 2rem;
 	}
 
 	p {
 		margin-top: 0;
-		margin-bottom: 15;
 		font-size: 1.5rem;
-	}
-
-	a {
-		font-family: 'Nexa Bold';
-		font-size: 2rem;
-	}
-	iframe {
-		margin-bottom: 15;
 	}
 
 	.striped-background {
@@ -58,21 +48,55 @@ html {
 	.flex-container {
 		display: flex;
 		align-items: center;
-		flex-direction: row;
 
-		.logo {
+		.img-container {
 			width: 50vw;
+			margin-right: 10px;
+
+			.logo {
+				width: inherit;
+			}
 		}
 
 		.contact-info {
-			width: 50vw;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			width: 50vw;
+			text-align: center;
+			margin-left: 10px;
+			position: relative;
 
 			.title {
-				font-size: 4rem;
-				font-family: 'Nexa Bold';
+				font-family: 'Nexa Bold', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				font-size: 3rem;
+			}
+
+			.appointment {
+				font-family: 'Nexa Bold', Arial, Helvetica, sans-serif;
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	html,
+	body {
+		min-width: 200px;
+
+		.flex-container {
+			flex-direction: column;
+
+			.contact-info {
+				position: relative;
+				text-align: center;
+
+				.title {
+					top: 0;
+					left: 0;
+					right: 0;
+				}
 			}
 		}
 	}
