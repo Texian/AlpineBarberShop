@@ -72,9 +72,24 @@ body {
 				font-size: 3rem;
 			}
 
-			.appointment {
+			button {
+				background-color: #ffbb62; 
+				border: none; 
 				font-family: 'Nexa Bold', Arial, Helvetica, sans-serif;
 				font-size: 2rem;
+				display: flex;
+				text-align: center;
+				padding: 1.5rem;
+				height: 3rem;
+				text-transform: uppercase; 
+				letter-spacing: 1px;  
+				border-radius: 8px; 
+				font-weight: 500; 
+				cursor: pointer;
+
+				a {
+					text-decoration: none;
+				}
 			}
 		}
 	}
